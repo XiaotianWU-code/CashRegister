@@ -6,9 +6,9 @@ namespace CashRegister
 	{
 		private readonly Printer printer;
 
-		public CashRegister()
+		public CashRegister(Printer printer)
 		{
-			printer = new Printer();
+			this.printer = printer;
 		}
 
 		public void Process(Purchase purchase)
